@@ -1,0 +1,17 @@
+{
+  "name": "jp.co.hololab.immersal",
+  "version": "0.1.0",
+  "displayName": "HoloLab Immersal Module",
+  "description": "Immersal HoloLens 用モジュール",
+  "unity": "2018.4",
+  "author": {
+    "name": "HoloLab Inc."
+  },
+  "samples": [
+    {
+      "displayName": "Localize",
+      "description": "ローカライズのサンプルです",
+      "path": "Samples~/Localize"
+    }
+  ]
+}

@@ -30,26 +30,10 @@ namespace HoloLab.Immersal
 
         private void ImmersalLocalization_OnLocalized(ImmersalLocalization.LocalizeInfo info)
         {
-            origin.position = Vector3.zero;
-            origin.rotation = Quaternion.identity;
+            var mapOriginPose = info.Pose.Inverse().GetTransformedBy(info.CameraPose);
 
-            captureCamera.localPosition = info.Pose.position;
-            captureCamera.localRotation = info.Pose.rotation;
-
-            // captureCamera -> mapOrigin が正しい値になる
-            mapOrigin.position = origin.position;
-            mapOrigin.rotation = origin.rotation;
-
-            // origin -> captureCamera を実際の値に合わせる
-            captureCamera.localPosition = info.CameraPose.position;
-            captureCamera.localRotation = info.CameraPose.rotation;
-
-
-            var position = mapOrigin.position;
-            var rotation = mapOrigin.rotation;
-
-            transform.position = position;
-            transform.rotation = rotation;
+            transform.position = mapOriginPose.position;
+            transform.rotation = mapOriginPose.rotation;
         }
     }
 }

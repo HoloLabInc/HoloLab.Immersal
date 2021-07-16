@@ -29,6 +29,11 @@ Assign `LocalizationSettings` to `ImmersalLocalization` in Inspector.
 
 <img width="480" src="https://user-images.githubusercontent.com/4415085/125905945-4a841763-c9b3-4308-a33a-7f588fb314e8.png"></img>
 
+### Place GameObjects
+Add GameObjects under the `MapOrign` GameObject. 
+
+<img width="360" src="https://user-images.githubusercontent.com/4415085/125908144-113c98a3-02aa-4160-ba7e-8ff68e8ab25c.png"></img>
+
 ### Build
 Build the Unity project and deploy to the HoloLens.
 

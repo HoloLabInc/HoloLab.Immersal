@@ -1,0 +1,9 @@
+symlinks:
+  # Sample フォルダ
+
+  - create-dest-folder: true
+    include-meta-file: true
+    src: ..\Assets\HoloLab.Immersal\Samples~
+    dest: ..\Assets\HoloLab.Immersal\Samples
+    target:
+      - Localize

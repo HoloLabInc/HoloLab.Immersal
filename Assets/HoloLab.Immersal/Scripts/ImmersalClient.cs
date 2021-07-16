@@ -17,8 +17,8 @@ namespace HoloLab.Immersal
 
         public string ApiBaseUri { set; get; } = "https://api.immersal.com";
 
-        public async Task<LocalizeResult> Localize(IEnumerable<int> mapIds, byte[] imageData, float fx, float fy,
-            float ox, float oy)
+        public async Task<LocalizeResult> Localize(IEnumerable<int> mapIds, byte[] imageData,
+            float fx, float fy, float ox, float oy)
         {
             try
             {

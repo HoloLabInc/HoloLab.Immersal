@@ -36,7 +36,7 @@ namespace HoloLab.Immersal
         public int IntervalMilliseconds { get; set; }
 
         private SynchronizationContext context;
-        
+
 #if WINDOWS_UWP
         private Stopwatch stopwatch = new Stopwatch();
         private TimeSpan latestTime = TimeSpan.MinValue;
@@ -75,9 +75,11 @@ namespace HoloLab.Immersal
         }
 #endif
 
+#pragma warning disable 0067
         public event Action<CaptureImage> OnCaptured;
 
         public event Action<Exception> OnError;
+#pragma warning restore 0067
 
         private void Awake()
         {

@@ -30,12 +30,6 @@ MonoBehaviour:
     - com.microsoft.mixedreality.toolkit.standardassets
     - com.microsoft.mixedreality.toolkit.tools
     m_IsDefault: 0
-  - m_Id: scoped:package.openupm.com
-    m_Name: package.openupm.com
-    m_Url: https://package.openupm.com
-    m_Scopes:
-    - com.openupm
-    m_IsDefault: 0
   m_UserSelectedRegistryName: 
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:

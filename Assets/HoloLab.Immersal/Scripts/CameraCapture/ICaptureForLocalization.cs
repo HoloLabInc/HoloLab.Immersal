@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) 2021 HoloLab Inc. All rights reserved.
+
+using System;
 using UnityEngine;
 #if WINDOWS_UWP
 using Windows.Perception.Spatial;

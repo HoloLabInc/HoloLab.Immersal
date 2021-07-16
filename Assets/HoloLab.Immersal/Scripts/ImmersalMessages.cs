@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Copyright (c) 2021 HoloLab Inc. All rights reserved.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

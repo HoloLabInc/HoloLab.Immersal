@@ -65,6 +65,7 @@ namespace HoloLab.Immersal
             catch (Exception e)
             {
                 Debug.LogWarning(e);
+                OnError?.Invoke(e);
             }
         }
     }

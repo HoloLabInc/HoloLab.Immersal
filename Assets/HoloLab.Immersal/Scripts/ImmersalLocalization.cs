@@ -29,6 +29,7 @@ namespace HoloLab.Immersal
         private SynchronizationContext context;
 
         public event Action<LocalizeInfo> OnLocalized;
+        public event Action OnLocalizationFailed;
 
         private void Start()
         {
@@ -83,7 +84,7 @@ namespace HoloLab.Immersal
             }
             else
             {
-                Debug.Log("Localization failed");
+                context.Post(_ => { OnLocalizationFailed?.Invoke(); }, null);
             }
         }
 

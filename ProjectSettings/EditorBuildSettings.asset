@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HoloLab.Immersal/Samples/Scenes/HoloLensLocalizeScene.unity
+    path: Assets/HoloLab.Immersal/Samples/Localize/Scenes/HoloLensLocalizeScene.unity
     guid: 0712d05e27a28554686c68a5dcc2a549
   m_configObjects: {}

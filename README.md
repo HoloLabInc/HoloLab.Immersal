@@ -17,12 +17,17 @@ Open `Packages\manifest.json` and add this line in "dependencies".
 Open Package Manager in Unity.  
 Select HoloLab Immersal Module and press sample import button.
 
-### 
+<img width="480" src="https://user-images.githubusercontent.com/4415085/125907168-9aa21b05-edda-497e-83dc-ff9f2254b467.png"></img>
+
+### Settings
 Copy "Packages > HoloLab Immersal Module > Settings > LocalizationSettings" to Assets folder.  
 Enter your developer token and target map id.  
+
+<img width="320" src="https://user-images.githubusercontent.com/4415085/125907550-8b1ef7a5-d8b2-4c4b-b67d-10230d3dc28f.png"></img>
+
 Assign `LocalizationSettings` to `ImmersalLocalization` in Inspector.
 
-![image](https://user-images.githubusercontent.com/4415085/125905945-4a841763-c9b3-4308-a33a-7f588fb314e8.png)
+<img width="480" src="https://user-images.githubusercontent.com/4415085/125905945-4a841763-c9b3-4308-a33a-7f588fb314e8.png"></img>
 
 ### Build
 Build the Unity project and deploy to the HoloLens.

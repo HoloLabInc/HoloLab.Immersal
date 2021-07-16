@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Copyright (c) 2021 HoloLab Inc. All rights reserved.
+
+using UnityEngine;
 
 namespace HoloLab.Immersal
 {

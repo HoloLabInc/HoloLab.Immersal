@@ -1,27 +1,26 @@
-﻿using System.Collections;
+﻿// Copyright (c) 2021 HoloLab Inc. All rights reserved.
+
+using System.Collections;
 using System.Collections.Generic;
 using HoloLab.Immersal;
 using UnityEngine;
 
-public class CameraPositionTest : MonoBehaviour
+namespace HoloLab.Immersal.Development
 {
-    [SerializeField]
-    private ImmersalLocalization immersalLocalization = null;
-
-    // Start is called before the first frame update
-    void Start()
+    public class CameraPositionTest : MonoBehaviour
     {
-        immersalLocalization.OnLocalized += ImmersalLocalization_OnLocalized;
-    }
+        [SerializeField]
+        private ImmersalLocalization immersalLocalization = null;
 
-    private void ImmersalLocalization_OnLocalized(ImmersalLocalization.LocalizeInfo info)
-    {
-        transform.position = info.CameraPose.position;
-        transform.rotation = info.CameraPose.rotation;
-    }
+        void Start()
+        {
+            immersalLocalization.OnLocalized += ImmersalLocalization_OnLocalized;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        private void ImmersalLocalization_OnLocalized(ImmersalLocalization.LocalizeInfo info)
+        {
+            transform.position = info.CameraPose.position;
+            transform.rotation = info.CameraPose.rotation;
+        }
     }
 }

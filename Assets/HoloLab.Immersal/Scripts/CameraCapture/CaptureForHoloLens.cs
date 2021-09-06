@@ -19,6 +19,10 @@ using Windows.Media.Capture;
 using Windows.Graphics.Imaging;
 using Windows.Storage.Streams;
 using System.Runtime.InteropServices.WindowsRuntime;
+
+#if MIXEDREALITY_OPENXR_PRESENT
+using Microsoft.MixedReality.OpenXR;
+#endif
 #endif
 
 namespace HoloLab.Immersal
@@ -56,6 +60,9 @@ namespace HoloLab.Immersal
         {
             get
             {
+#if MIXEDREALITY_OPENXR_PRESENT
+               return PerceptionInterop.GetSceneCoordinateSystem(UnityEngine.Pose.identity) as SpatialCoordinateSystem;
+#else
                 // https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-xrdevice-advanced?tabs=xr
                 var worldOriginCoordinateSystemPtr = IntPtr.Zero;
 #if WMR_ENABLED
@@ -73,6 +80,7 @@ namespace HoloLab.Immersal
                 }
 
                 return worldOriginCoordinateSystem;
+#endif
             }
         }
 #endif

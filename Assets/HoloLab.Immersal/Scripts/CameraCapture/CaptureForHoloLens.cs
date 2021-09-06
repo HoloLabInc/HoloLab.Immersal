@@ -231,7 +231,7 @@ namespace HoloLab.Immersal
         private async void ColorFrameReader_FrameArrived(MediaFrameReader sender, MediaFrameArrivedEventArgs args)
         {
             var currentTime = stopwatch.Elapsed;
-            if (currentTime < latestTime + TimeSpan.FromSeconds(3))
+            if (currentTime < latestTime + TimeSpan.FromMilliseconds(IntervalMilliseconds))
             {
                 return;
             }

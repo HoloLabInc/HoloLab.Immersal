@@ -1,12 +1,6 @@
 # HoloLab.Immersal
 Immersal localization module for HoloLens.
 
-![Immersal Localization Module for HoloLens 2 logo](https://user-images.githubusercontent.com/8019605/134129065-b80d9ffa-ed15-48e5-a742-d06c336410d9.png) 
-
-Youtube Link: Immersal localization module running on HoloLens 2
-
-[![](https://img.youtube.com/vi/c891tpQILZY/0.jpg)](https://www.youtube.com/watch?v=c891tpQILZY)
-
 ## Supported versions
 - Unity 2019.4.x
 

@@ -1,7 +1,7 @@
 # HoloLab.Immersal
 Immersal localization module for HoloLens.
 
-![ILMfHmono](https://user-images.githubusercontent.com/8019605/134129065-b80d9ffa-ed15-48e5-a742-d06c336410d9.png) 
+![Immersal Localization Module for HoloLens 2 logo](https://user-images.githubusercontent.com/8019605/134129065-b80d9ffa-ed15-48e5-a742-d06c336410d9.png) 
 
 Youtube Link: Immersal localization module running on HoloLens 2
 

@@ -311,7 +311,7 @@ namespace HoloLab.Immersal
                 {
                     await encoder.FlushAsync();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     return array;
                 }

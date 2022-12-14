@@ -277,9 +277,6 @@ namespace HoloLab.Immersal
                 if (matrix.HasValue)
                 {
                     pose = ToUnityPose(matrix.Value);
-
-                    Debug.Log(pose.position);
-                    Debug.Log(pose.rotation.eulerAngles);
                 }
                 else
                 {

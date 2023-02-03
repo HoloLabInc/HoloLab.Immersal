@@ -1,7 +1,9 @@
 {
     "name": "HoloLab.Immersal",
     "references": [
-        "GUID:3b76ab8242cc35d479edf0a949d56d59"
+        "GUID:3b76ab8242cc35d479edf0a949d56d59",
+        "GUID:a9420e37d7990b54abdef6688edbe313",
+        "GUID:92703082f92b41ba80f0d6912de66115"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -15,6 +17,11 @@
             "name": "com.microsoft.mixedreality.openxr",
             "expression": "",
             "define": "MIXEDREALITY_OPENXR_PRESENT"
+        },
+        {
+            "name": "com.unity.xr.arfoundation",
+            "expression": "",
+            "define": "ARFOUNDATION_PRESENT"
         }
     ],
     "noEngineReferences": false

@@ -20,7 +20,7 @@
         },
         {
             "name": "com.unity.xr.arfoundation",
-            "expression": "",
+            "expression": "4",
             "define": "ARFOUNDATION_PRESENT"
         }
     ],

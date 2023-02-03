@@ -119,12 +119,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.subsystemregistration": {
-      "version": "1.1.0",
+      "version": "1.0.6",
       "depth": 2,
       "source": "registry",
-      "dependencies": {
-        "com.unity.modules.subsystems": "1.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
@@ -169,22 +167,21 @@
       }
     },
     "com.unity.xr.arfoundation": {
-      "version": "4.1.13",
+      "version": "2.1.19",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.arsubsystems": "4.1.13",
-        "com.unity.xr.management": "4.0.1",
-        "com.unity.modules.particlesystem": "1.0.0"
+        "com.unity.xr.legacyinputhelpers": "2.1.7",
+        "com.unity.xr.arsubsystems": "2.1.19"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arsubsystems": {
-      "version": "4.1.13",
+      "version": "2.1.19",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.subsystemregistration": "1.1.0"
+        "com.unity.subsystemregistration": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },
@@ -195,19 +192,6 @@
       "dependencies": {
         "com.unity.modules.vr": "1.0.0",
         "com.unity.modules.xr": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.xr.management": {
-      "version": "4.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.subsystems": "1.0.0",
-        "com.unity.modules.vr": "1.0.0",
-        "com.unity.modules.xr": "1.0.0",
-        "com.unity.xr.legacyinputhelpers": "2.1.7",
-        "com.unity.subsystemregistration": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },

@@ -77,6 +77,9 @@ namespace HoloLab.Immersal
             {
                 return;
             }
+            
+            var cameraTransform = arCameraManager.transform;
+            var cameraPose = new Pose(cameraTransform.localPosition, cameraTransform.localRotation);
 
             var isConversionSuccess = await TryConvertCpuImageToTextureAsync(image);
             image.Dispose();
@@ -88,13 +91,12 @@ namespace HoloLab.Immersal
 
             var encodedImageData = _conversionTexture2D.EncodeToPNG();
 
-            var cameraTransform = arCameraManager.transform;
             var captureImage = new CaptureImage
             {
                 Data = encodedImageData,
                 FocalLength = new Vector2(intrinsics.focalLength.y, intrinsics.focalLength.x),
                 PrincipalPoint = new Vector2(intrinsics.principalPoint.y, intrinsics.principalPoint.x),
-                CameraPose = new Pose(cameraTransform.localPosition, cameraTransform.localRotation)
+                CameraPose = cameraPose
             };
 
             OnCaptured?.Invoke(captureImage);

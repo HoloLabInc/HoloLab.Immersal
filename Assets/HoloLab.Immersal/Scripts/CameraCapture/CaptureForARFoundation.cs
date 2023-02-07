@@ -57,8 +57,9 @@ namespace HoloLab.Immersal
 
             while (_isCapturing)
             {
-                _ = ProcessCameraImageAsync();
-                await Task.Delay(IntervalMilliseconds);
+                var processTask = ProcessCameraImageAsync();
+                var delayTask = Task.Delay(IntervalMilliseconds);
+                await Task.WhenAll(processTask, delayTask);
             }
         }
 
